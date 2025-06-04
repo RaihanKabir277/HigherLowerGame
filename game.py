@@ -34,9 +34,9 @@ def game_play():
             print(f"you are right, Your current score is = {count}")
 
         elif compare == "b" and follower_B > follower_A :
-            print("\n" * 20)
-            count += 1
-            print(f"you are right, Your current score is = {count}")
+           print("\n" * 20)
+           count += 1
+           print(f"you are right, Your current score is = {count}")
 
         elif compare == "a" and follower_A < follower_B :
             print("\n" * 20)
@@ -49,9 +49,14 @@ def game_play():
             break
 
 
-        
-
 game_play()
+
+while input("Do you want to play this game of higher lower ? Type 'y' for yes and 'n' for no:\n ").lower() == "y":
+    print("\n" * 20)
+    game_play()
+
+
+
         
 
     
